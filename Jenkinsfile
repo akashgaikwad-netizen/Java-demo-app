@@ -12,7 +12,7 @@ pipeline {
 
         string(
             name: 'ImageName',
-            defaultValue: 'employee-api',
+            defaultValue: 'Java-demo-app',
             description: 'Name of Docker image'
         )
 
@@ -38,7 +38,7 @@ pipeline {
             steps {
                 gitCheckout(
                     branch: 'main',
-                    url: 'https://github.com/akashgaikwad-netizen/employee-api.git'
+                    url: 'https://github.com/akashgaikwad-netizen/Java-demo-app.git'
                 )
             }
         }
